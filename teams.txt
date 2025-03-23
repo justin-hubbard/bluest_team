@@ -1,0 +1,35 @@
+Auburn University,Alabama State University;
+University of Louisville,Creighton University; 
+University of Michigan, University of Calfornia San Diego,;
+Texas A&M University, Yale University;
+Ole Miss,University of North Carolina;
+Iowa State University, Lispcomb University;
+Marquette University, University of New Mexico;
+Michigan State University, Bryant University;
+?
+University of Florida, Norfolk State University;
+University of Connecticut, University of Oklahoma;
+University of Memphis, Colorado State University;
+University of Maryland, Grand Canyon University;
+University of Missouri, Drake University;
+Texas Tech University, University of North Carolina Wilmington;
+Kansas University, University of Arkansas;
+St. John's University, University of Nebraska Omaha;
+?
+Duke University, Mount St. Mary's University;
+Mississippi State University, Baylor University;
+University of Oregon, Liberty University;
+University of Arizona, University of Akron;
+Brigham Young University, Virginia Commonwealth University;
+University of Wisconsin, University of Montana;
+Saint Mary's College of California, Vanderbilt University;
+University of Alabama, Robert Morris University;
+?
+University of Houston, Southern Illinois University Edwardsville;
+Gonzaga University, University of Georgia;
+Clemson University, McNeese State University;
+Purdue University, High Point University;
+University of Illinois, Xavier University;
+University of Kentucky, Troy University;
+University of Calfornia Los Angeles, Utah State University;
+University of Tennessee, Wofford College;
