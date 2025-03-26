@@ -3,7 +3,7 @@ import os
 
 def main():
 
-    file = open('matchups.csv', 'r')
+    #file = open('matchups.csv', 'r')
 
     #data = pandas.read_csv('matchups.csv')
 
@@ -11,13 +11,33 @@ def main():
 
     #print(data[data['YEAR'] == 2024])
 
-    #teamData = pandas.read_csv('mm-data/MTeams.csv')
+    colors = pandas.read_csv('teamcolors_ncaa.csv')
+    teamData = pandas.read_csv('mm-data/MTeams.csv')
 
-    #print(teamIDtoName(teamData, 1439))
-    teams = generateTeams(64)
+    seeds = pandas.read_csv('mm-data/MNCAATourneySeeds.csv')
+
+    lasty = seeds[seeds['Season'] == 2024]
+    #print(lasty)
+
+    vTeams = [teamIDtoName(teamData, teamID) for teamID in lasty['TeamID'].values]
+    print(vTeams)
+    
+
+    #findErrors(colors, teamData)
+
+    #print(teamIDtoName(teamData, 1450))
+    #teams = generateTeams(64)
     #printTeams(teams)
-    mups = teamsToMatchups(teams)
+    #mups = teamsToMatchups(teams)
     #runBracket(mups)
+
+def findErrors(colors, teamData):
+    for i, line in colors.iterrows():
+        #print(teamData['TeamName'].isin([line['name']]))
+        if line['name'] in teamData['TeamName'].values:
+            x = 1
+        else:
+            print(line['name'])
 
 
 def runBracket(mups64):
