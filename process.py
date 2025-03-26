@@ -3,7 +3,7 @@ import os
 
 def main():
 
-    #file = open('matchups.csv', 'r')
+    file = open('matchups.csv', 'r')
 
     #data = pandas.read_csv('matchups.csv')
 
@@ -17,7 +17,7 @@ def main():
     teams = generateTeams(64)
     #printTeams(teams)
     mups = teamsToMatchups(teams)
-    runBracket(mups)
+    #runBracket(mups)
 
 
 def runBracket(mups64):
@@ -37,8 +37,6 @@ def runRound(mups, compareTeams):
         mup['winner'] = winner
         nxtRound.append(teams[winner])
     return teamsToMatchups(nxtRound)
-    
-    
 
 def comp(team1, team2):
     return 1
