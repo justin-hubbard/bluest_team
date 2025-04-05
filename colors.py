@@ -1,3 +1,6 @@
+# Perfect blue = hsv(240, 100, 100)
+
+
 def hexToRGB(hex):
     return tuple(int(hex[i:i+2], 16) for i in (1,3,5))
 
@@ -32,7 +35,6 @@ def RGBtoHSV(rgb):
     value = cmax * 100
 
     return (hue, saturation, value)
-
 
 
 def main():

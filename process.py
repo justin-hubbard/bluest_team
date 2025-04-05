@@ -1,6 +1,8 @@
 import pandas
 import os
 
+# source .venv/bin/activate
+
 def main():
 
     #file = open('matchups.csv', 'r')
@@ -14,12 +16,12 @@ def main():
     colors = pandas.read_csv('teamcolors_ncaa.csv')
     teamData = pandas.read_csv('mm-data/MTeams.csv')
 
-    seeds = pandas.read_csv('mm-data/MNCAATourneySeeds.csv')
+    #seeds = pandas.read_csv('mm-data/MNCAATourneySeeds.csv')
 
-    lasty = seeds[seeds['Season'] == 2024]
+    #lasty = seeds[seeds['Season'] == 2024]
     #print(lasty)
 
-    vTeams = [teamIDtoName(teamData, teamID) for teamID in lasty['TeamID'].values]
+    #vTeams = [teamIDtoName(teamData, teamID) for teamID in lasty['TeamID'].values]
     print(vTeams)
     
 

@@ -1,0 +1,22 @@
+
+from TourneySeeds: get which teams are in each slot, 
+combine that into TourneySlots
+<<Now we need to know which teams won>>
+    - for R1, if day == 136 or 137, look up
+    strong seed in matchup in CmpctRes column WTeamID
+    - if is not in there, then other team won
+    - winner becomes its slot
+
+
+
+season, slot, StSeed, WkSeed, || StrID, WkID || Winner
+
+
+2024, R1W1, W01, W016, || 1163, 1391 || 1163
+
+
+make DF of play-in games
+make DF of round 1
+etc
+
+GOAL 1: make copy of tourney slots, add strongseedIDs to it
