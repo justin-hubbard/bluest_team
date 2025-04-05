@@ -10,12 +10,13 @@ def main():
 
     #res.show()
     #return
-    testYear = 2024
+    testYear = 'Season = 2024 AND'
+    testYear = ''
 
     play_in = duck.sql(f"""
                     SELECT * 
                     FROM slots 
-                    WHERE Season = {testYear} AND
+                    WHERE {testYear}
                           (Slot LIKE 'W%' OR
                            Slot LIKE 'X%' OR
                            Slot LIKE 'Y%' OR
@@ -40,14 +41,13 @@ def main():
                          play_in.WkTeamID = res.WTeamID)
                          AND play_in.Season = res.Season)
                     WHERE DayNum = 134 OR DayNum = 135
-                    ORDER BY Slot DESC
                    """).df()
     
 
     round1 = duck.sql(f"""
                     SELECT *
                     FROM slots
-                    WHERE Season = {testYear} AND
+                    WHERE {testYear}
                         Slot LIKE 'R1%'
                     """).df()
     round1 = duck.sql("""
@@ -81,14 +81,13 @@ def main():
                          round1.WkTeamID = res.WTeamID)
                          AND round1.Season = res.Season)
                     WHERE DayNum = 136 OR DayNum = 137
-                    ORDER BY Slot
                    """).df()
     
 
     round2 = duck.sql(f"""
                     SELECT *
                     FROM slots
-                    WHERE Season = {testYear} AND
+                    WHERE {testYear}
                         Slot LIKE 'R2%'
                     """).df()
     round2 = duck.sql("""
@@ -121,7 +120,7 @@ def main():
     round3 = duck.sql(f"""
                     SELECT *
                     FROM slots
-                    WHERE Season = {testYear} AND
+                    WHERE {testYear}
                         Slot LIKE 'R3%'
                     """).df()
     round3 = duck.sql("""
@@ -154,7 +153,7 @@ def main():
     round4 = duck.sql(f"""
                     SELECT *
                     FROM slots
-                    WHERE Season = {testYear} AND
+                    WHERE {testYear}
                         Slot LIKE 'R4%'
                     """).df()
     round4 = duck.sql("""
@@ -187,7 +186,7 @@ def main():
     round5 = duck.sql(f"""
                     SELECT *
                     FROM slots
-                    WHERE Season = {testYear} AND
+                    WHERE {testYear}
                         Slot LIKE 'R5%'
                     """).df()
     round5 = duck.sql("""
@@ -220,7 +219,7 @@ def main():
     round6 = duck.sql(f"""
                     SELECT *
                     FROM slots
-                    WHERE Season = {testYear} AND
+                    WHERE {testYear}
                         Slot LIKE 'R6%'
                     """).df()
     round6 = duck.sql("""
@@ -263,7 +262,7 @@ def main():
                             SELECT * FROM round5
                             UNION ALL
                             SELECT * FROM round6
-                            ORDER BY Slot
+                            ORDER BY Season, Slot
                         """)
 
     #print(round1)
