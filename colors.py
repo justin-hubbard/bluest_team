@@ -1,5 +1,5 @@
 # Perfect blue = hsv(240, 100, 100)
-
+import math
 
 def hexToRGB(hex):
     return tuple(int(hex[i:i+2], 16) for i in (1,3,5))
@@ -70,7 +70,7 @@ def XYZtoLab(xyz):
 
     if ( rY > 0.008856 ): rY = pow(rY, 1/3 )
     else: rY = ( 7.787 * rY ) + ( 16 / 116 )
-    
+
     if ( rZ > 0.008856 ): rZ = pow(rZ, 1/3 )
     else: rZ = ( 7.787 * rZ ) + ( 16 / 116 )
 
@@ -80,19 +80,48 @@ def XYZtoLab(xyz):
 
     return (L, a, b)
 
+def colorDist(Lab1, Lab2):
+    L1, a1, b1 = Lab1
+    L2, a2, b2 = Lab2
 
+    dL = pow(L1 - L2, 2)
+    da = pow(a1 - a2, 2)
+    db = pow(b1 - b2, 2)
+
+    d = math.sqrt(dL + da + db)
+
+    return d
+
+def rgbDiff(rgb1, rgb2):
+    xyz1 = RGBtoXYZ(rgb1)
+    xyz2 = RGBtoXYZ(rgb2)
+
+    lab1 = XYZtoLab(xyz1)
+    lab2 = XYZtoLab(xyz1)
+
+    return colorDist(lab1, lab2)
 
 def main():
     color = "#F04C29"
-    rgb = hexToRGB(color)
+    rgb1 = hexToRGB(color)
+    rgb1 = (0, 0, 180)
+    rgb2 = (0, 0, 255)
     #hex = RGBtoHSV(rgb)
 
-    xyz = RGBtoXYZ(rgb)
-    lab = XYZtoLab(xyz)
+    xyz1 = RGBtoXYZ(rgb1)
+    lab1 = XYZtoLab(xyz1)
 
-    print(rgb)
-    print(xyz)
-    print(lab)
+    xyz2 = RGBtoXYZ(rgb2)
+    lab2 = XYZtoLab(xyz2)
+
+    print(rgb1)
+    print(xyz1)
+    print(lab1)
+    print(rgb2)
+    print(xyz2)
+    print(lab2)
+
+    print(colorDist(lab1, lab2))
 
 if __name__ == "__main__":
     main()
