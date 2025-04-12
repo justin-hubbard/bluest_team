@@ -234,7 +234,7 @@ Princeton,ncaa,#FF671F,#000000,NA,NA,Ivy
 Providence,ncaa,#000000,#8A8D8F,#FFFFFF,NA,Big East
 Purdue,ncaa,#CEB888,#000000,#9D968D,#373A36,Big 10
 Purdue Fort Wayne,ncaa,#002F6C,#000000,#63666A,#97999B,Horizon
-Queens,ncaa,#192C66,white,NA,NA,A-Sun
+Queens,ncaa,#192C66,#FFFFFF,NA,NA,A-Sun
 Quinnipiac,ncaa,#0A2240,#FFB819,NA,NA,MAAC
 Radford,ncaa,#C2011B,#808285,NA,NA,Big South
 Rhode Island,ncaa,#68ABE8,#002147,NA,NA,A-10
@@ -267,7 +267,7 @@ South Alabama,ncaa,#00205B,#BF0D3E,NA,NA,Sunbelt
 South Carolina,ncaa,#73000A,#000000,NA,NA,SEC
 South Carolina St,ncaa,#841A2B,#1E4692,NA,NA,MEAC
 South Dakota,ncaa,#AD0000,#B4B4B4,#000000,NA,Summit
-South Dakota St,ncaa,#0033A0,#FFD100,NA,NA,Summit
+S Dakota St,ncaa,#0033A0,#FFD100,NA,NA,Summit
 South Florida,ncaa,#006747,#CFC493,NA,NA,AAC
 Southeast Missouri St,ncaa,#C8102E,#000000,NA,NA,OVC
 Southeastern Louisiana,ncaa,#006341,#EAAA00,NA,NA,Southland
@@ -280,13 +280,13 @@ Southern Utah,ncaa,#000000,#FFFFFF,NA,NA,WAC
 St Bonaventure,ncaa,#54261A,#FDB726,#BDB6B0,NA,A-10
 St Francis NY,ncaa,#0038A8,#CE1126,NA,NA,NEC
 St John's,ncaa,#BA0C2F,#041C2C,#A7A8AA,NA,Big East
-St Thomas,ncaa,purple,white,NA,NA,Summit
+St Thomas,ncaa,purple,#FFFFFF,NA,NA,Summit
 Stanford,ncaa,#8C1515,#FFFFFF,#4D4F53,#2E2D29,Pac 12
 Stetson,ncaa,#006747,#B58150,#9E652E,#000000,A-Sun
 Stonehill,ncaa,purple,black,NA,NA,NEC
 Stony Brook,ncaa,#990000,#16243E,#828282,NA,CAA
 Syracuse,ncaa,#D44500,#3E3D3C,#6F777D,#ADB3B8,ACC
-Tarleton St,ncaa,#4F2D7F,white,NA,NA,WAC
+Tarleton St,ncaa,#4F2D7F,#FFFFFF,NA,NA,WAC
 TCU,ncaa,#4D1979,#A3A9AC,#FFFFFF,NA,Big 12
 Temple,ncaa,#9D2235,#FFCD00,#8A8D8F,#C1C6C8,AAC
 Tennessee,ncaa,#FF8200,#58595B,#FFFFFF,NA,SEC
@@ -304,7 +304,7 @@ Towson,ncaa,#000000,#FFCC00,NA,NA,CAA
 Troy,ncaa,#6D0017,#B2B3B5,#000000,NA,Sunbelt
 Tulane,ncaa,#006747,#43B02A,#418FDE,#000000,AAC
 Tulsa,ncaa,#002D72,#C8102E,#C5B783,#F3D54E,AAC
-Alabama at Birmingham,ncaa,#006341,#CC8A00,#000000,#BF0D3E,C-USA
+UAB,ncaa,#006341,#CC8A00,#000000,#BF0D3E,C-USA
 UC Davis,ncaa,#002855,#B3A369,NA,NA,Big West
 UC Irvine,ncaa,#0C2340,#FFC72C,NA,NA,Big West
 UC Riverside,ncaa,#2D6CC0,#003066,#F1AB00,#7A6E67,Big West
@@ -321,14 +321,14 @@ UMBC,ncaa,#B18906,#FFC20E,#000000,#ED1C24,Am. East
 UMES,ncaa,#822433,#8B8D8E,NA,NA,MEAC
 UNC Asheville,ncaa,#003DA5,#FFFFFF,NA,NA,Big South
 UNC Greensboro,ncaa,#0F2044,#FFB71B,NA,NA,Southern
-UNCW,ncaa,#006666,#003366,#FFD600,NA,CAA
+UNC Wilmington,ncaa,#006666,#003366,#FFD600,NA,CAA
 UNI,ncaa,#4B116F,#FFCC00,NA,NA,MVC
 UNLV,ncaa,#B10202,#666666,#000000,NA,MWC
 USC Upstate,ncaa,#00703C,#000000,NA,NA,Big South
 UT Arlington,ncaa,#F58025,#0064B1,NA,NA,WAC
 UT Martin,ncaa,#002649,#F77F00,NA,NA,OVC
 Utah,ncaa,#CC0000,#808080,#000000,NA,Pac 12
-Utah State,ncaa,#0F2439,#FFFFFF,#9D968D,#000000,MWC
+Utah St,ncaa,#0F2439,#FFFFFF,#9D968D,#000000,MWC
 Utah Tech,ncaa,#BA1C21,#ADA1A2,#NA,NA,WAC
 Utah Valley,ncaa,#275D38,#000000,#8E8C89,NA,WAC
 UTEP,ncaa,#FF8200,#041E42,#B1B3B3,NA,C-USA

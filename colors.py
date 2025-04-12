@@ -89,7 +89,6 @@ def colorDist(Lab1, Lab2):
     db = pow(b1 - b2, 2)
 
     d = math.sqrt(dL + da + db)
-
     return d
 
 def rgbDiff(rgb1, rgb2):
@@ -97,14 +96,21 @@ def rgbDiff(rgb1, rgb2):
     xyz2 = RGBtoXYZ(rgb2)
 
     lab1 = XYZtoLab(xyz1)
-    lab2 = XYZtoLab(xyz1)
+    lab2 = XYZtoLab(xyz2)
 
+    print(lab1, lab2)
     return colorDist(lab1, lab2)
+
+def hexDiff(hex1, hex2):
+    rgb1 = hexToRGB(hex1)
+    rgb2 = hexToRGB(hex2)
+
+    return rgbDiff(rgb1, rgb2)
 
 def main():
     color = "#F04C29"
     rgb1 = hexToRGB(color)
-    rgb1 = (0, 0, 180)
+    #rgb1 = (0, 0, 180)
     rgb2 = (0, 0, 255)
     #hex = RGBtoHSV(rgb)
 
@@ -114,14 +120,23 @@ def main():
     xyz2 = RGBtoXYZ(rgb2)
     lab2 = XYZtoLab(xyz2)
 
-    print(rgb1)
-    print(xyz1)
-    print(lab1)
-    print(rgb2)
-    print(xyz2)
-    print(lab2)
+    # print(rgb1)
+    # print(xyz1)
+    # print(lab1)
+    # print(rgb2)
+    # print(xyz2)
+    # print(lab2)
+    # print(colorDist(lab1, lab2))
 
-    print(colorDist(lab1, lab2))
+    duke = '#0736A4'
+    fla = '#0021A5'
+    cle = '#522D80'
+    mcn = '#00529B'
+
+    #print(rgbDiff((0,0,255), (255,209,3)))
+    print(hexDiff('#0000FF', cle))
+    print(hexDiff('#0000FF', mcn))
+
 
 if __name__ == "__main__":
     main()
